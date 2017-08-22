@@ -9,6 +9,20 @@ Composer((err, server) => {
         throw err;
     }
 
+    server.auth.strategy('keycloak', 'keycloak');
+
+    server.route({
+  method: 'GET',
+  path: '/login',
+  config: {
+    auth: 'keycloak'
+  },
+  handler: (request, reply) => {
+    console.log('ming')
+    reply({ message: 'Welcome to keycloak' });
+  }
+});
+
     server.start((error) => {
 
         if (error) {

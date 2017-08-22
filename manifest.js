@@ -28,6 +28,28 @@ const manifest = {
     registrations: [
         {
             plugin: './server/api/index'
+        },
+        {
+            plugin: {
+              register: './server/keycloak-hapi',
+              options: {
+                config: {store: 'yar'}
+              }
+            }
+        },
+        {
+            plugin: './node_modules/vision'
+        },
+        {
+            plugin: {
+                register: './node_modules/yar',
+                options: {
+                  cookieOptions: {
+                    isSecure: false,
+                    password: 'the-password-must-be-at-least-32-characters-longasdfasdfadsf'
+                  }
+                }
+            }
         }
     ]
 };

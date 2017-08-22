@@ -9,6 +9,13 @@ test keycloak plugin
 $ echo "details coming soon"
 ```
 
+## Supporting keycloak
+
+because server/keycloak-hapi (is untracked content), you need to git clone it.
+```bash
+$ cd server
+$ git clone https://github.com/keycloak/keycloak-hapi.git
+```
 
 ## License
 
