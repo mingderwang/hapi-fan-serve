@@ -6,7 +6,11 @@ test keycloak plugin
 ## Usage
 
 ```bash
-$ echo "details coming soon"
+$ cd hapi-fan-serve
+$ npm install
+$ npm update --save
+$ npm test
+$ npm start
 ```
 
 ## Supporting keycloak
