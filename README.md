@@ -21,6 +21,18 @@ $ cd server
 $ git clone https://github.com/keycloak/keycloak-hapi.git
 ```
 
+## Usage for keycloak
+
+download keycloak-3.2.1.Final from http://www.keycloak.org/downloads.html, and upzip it.
+```bash
+$ cd keycloak-3.2.1.Final
+$ bin/standalone.sh
+```
+or
+```bash
+$ bin/standalone.sh -Dkeycloak.import=/<YOUR_PAH>/hapi-fan-serve/hapi-example-realm.json
+```
+
 ## License
 
 MIT
